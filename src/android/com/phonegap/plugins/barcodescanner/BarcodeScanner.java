@@ -326,6 +326,7 @@ public class BarcodeScanner extends CordovaPlugin {
             }
             return outputString;
         } catch(Exception ex) {
+            Log.d(LOG_TAG, "Unzip error: " + ex.getMessage());
             return "Unzip error";
         }
 
